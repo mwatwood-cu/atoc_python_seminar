@@ -32,17 +32,23 @@ print("")
 print("Then Nathan enters the converstation with:")
 
 #Write Here!
-#print("")
+print("I had to write this big paper in undergrad about steak. I now really like steak and ate it a lot in TX.")
 
 print("")
 
 ### Here Mckenzie can tell us about her cats, dog, or favorite Disney movie/show
-print("Finally Mckenzie jumps in to add:")
+print("Almost finally Mckenzie jumps in to add:")
 
 #Write Here!
-#print("")
+print("Today I took Nellie to the dog park.")
 
 print("")
+
+### Here Josh can tell us about his breakfast
+print("Finally Josh jumps in to add:")
+
+#Write Here!
+print("Today I had a croiscant for breakfast. It was technically homemade.")
 
 ### That's all folks
 print("fin")
