@@ -16,7 +16,7 @@ print("")
 print("To this Mikell says:")
 
 #Write Here!
-#print("")
+print("My favorite dog is my own dog")
 
 print("")
 
@@ -24,7 +24,7 @@ print("")
 print("Then Sean comes along and says:")
 
 #Write Here!
-#print("")
+print("I'd love to meet Mikell's dog!")
 
 print("")
 
