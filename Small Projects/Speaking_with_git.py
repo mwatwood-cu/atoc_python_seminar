@@ -32,7 +32,7 @@ print("")
 print("Then Nathan enters the converstation with:")
 
 #Write Here!
-#print("")
+print("I had to write this big paper in undergrad about steak. I now really like steak and ate it a lot in TX.")
 
 print("")
 
