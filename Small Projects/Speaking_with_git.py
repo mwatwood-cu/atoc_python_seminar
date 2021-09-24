@@ -14,18 +14,34 @@ print("")
 
 ### Here is space for Mikell to make a statement about his dogs or his favorite pastry
 print("To this Mikell says:")
+
+#Write Here!
+#print("")
+
 print("")
 
 ### Here Sean can tell us about his favorite place in the world
 print("Then Sean comes along and says:")
+
+#Write Here!
+#print("")
+
 print("")
 
 ### Here Nathan can tell us about his favorite food
 print("Then Nathan enters the converstation with:")
+
+#Write Here!
+#print("")
+
 print("")
 
 ### Here Mckenzie can tell us about her cats, dog, or favorite Disney movie/show
 print("Finally Mckenzie jumps in to add:")
+
+#Write Here!
+#print("")
+
 print("")
 
 ### That's all folks
