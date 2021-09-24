@@ -1,11 +1,15 @@
 ### This is a Test file to show the usefulness of git and working in teams
 
+print("So begins the story of our seminar.")
+
 ### This is Matt's section to give a demonstration.
 print("Backcountry skiing is just hiking without the people and more chances to fall into white quicksand.")
 print("")
 print("Haikus are easy")
 print("But they don't always make sense")
 print("Refrigerator")
+
+print("Thanks for reading. -M@")
 
 ### Here is space for Mikell to make a statement about his dogs or his favorite pastry
 
@@ -19,3 +23,5 @@ print("Refrigerator")
 ### Here Mckenzie can tell us about her cats, dog, or favorite Disney movie/show
 
 
+### That's all folks
+print("fin")
