@@ -1,5 +1,5 @@
 import pandas as pd
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import numpy as np
 
 # Here we will build some functions separately then come together to use them
@@ -23,12 +23,11 @@ def example():
 
 ### Data Manipulation Function
 # Group one will work here
-def create_monthly_means(time_series_data):
+def create_monthly_means(time_series_data, variable_name):
     # time_series data should be an xarray coming in
-    time_series_data = time_series_data['cldarea_total_daynight_mon']
+    time_series_data = time_series_data[variable_name]
     # Start by understanding the data
     num_years = int(round(len(time_series_data.time)/12))
-    print(time_series_data)
 
     # Make a space holder for the data itself
     monthly_data = np.empty((num_years, 12))
@@ -86,8 +85,8 @@ def plot_means_surrounded_by_deviation(monthly_sorted_data_frame, y_var):
     plt.figure()
     plt.fill_between(months, mean-std, mean+std)
     plt.plot(months, mean, 'r')
-    plt.show()
     plt.ylabel(y_var)
+    plt.show()
 
     # This function returns nothing but should plot the data
     return
