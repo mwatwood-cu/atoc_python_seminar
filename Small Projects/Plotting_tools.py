@@ -2,9 +2,11 @@ import pandas as pd
 #import matplotlib.pyplot as plt
 import numpy as np
 
-### Here we will build some functions separately then come together to use them
+# Here we will build some functions separately then come together to use them
 
-# An example 
+# An example
+
+
 def example():
     first_value = 12
     second_value = 15
@@ -16,6 +18,8 @@ def example():
 
     print("done")
     return
+
+
 
 ### Data Manipulation Function
 # Group one will work here
@@ -52,25 +56,38 @@ def create_monthly_means(time_series_data):
 
     # Return out a pandas DataFrame
     return pandas_format_dataframe
-'''
+
+  
 ### Next Section
 # Group 2 will work here
-def plot_means_surrounded_by_deviation(monthly_sorted_data_frame):
+def plot_means_surrounded_by_deviation(monthly_sorted_data_frame, y_var):
+    # y_var should be a sting
     # monthly_sorted_data_frame should be a pandas DataFrame with each column being a month and each row a year
 
     # Use this as the x-axis data
-    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+              'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
     # TODO
     # 1. Calculate and save the mean values of each column
 
+    mean = monthly_sorted_data_frame.mean()
+
     # 2. Calculate and save the std deviation of each column
+
+    std = monthly_sorted_data_frame.std()
 
     # 3. Use matplotlib to plot the mean value against the months
 
+    # plt.plot(months, mean)
+
     # 4. Use the matplotlib function fill_between to show a shape around the running mean
 
+    plt.figure()
+    plt.fill_between(months, mean-std, mean+std)
+    plt.plot(months, mean, 'r')
+    plt.show()
+    plt.ylabel(y_var)
 
     # This function returns nothing but should plot the data
     return
-'''
